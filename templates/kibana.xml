@@ -38,7 +38,7 @@
   <Data>
   </Data>
   <WebUI>http://[IP]:[PORT:5601]/</WebUI>
-  <Icon>https://raw.githubusercontent.com/ramanagottipati/unraid-docker-templates/master/images/kibana-icon.png</Icon>
+  <Icon>https://raw.githubusercontent.com/ramanagottipati/unraid-docker-templates/master/images/logo-elastic-kibana-lt.svg</Icon>
   <DonateText/>
   <DonateLink/>
   <ExtraParams></ExtraParams>
