@@ -1,0 +1,7 @@
+/nbproject/
+.DS_STORE
+.idea
+*.log
+/node_modules/
+local*.json
+.history/

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Containers>
+  <TemplateURL>https://raw.githubusercontent.com/ramanagottipati/unraid-docker-templates/master/templates/kibana.xml</TemplateURL>
+  <Beta>False</Beta>
+  <Category>Other: Tools:</Category>
+  <Name>kibana</Name>
+  <Description>
+    Kibana is an open source analytics and visualization platform designed to work with Elasticsearch. You use Kibana to search, view, and interact with data stored in Elasticsearch indices. You can easily perform advanced data analysis and visualize your data in a variety of charts, tables, and maps.[br][br]&#xD;
+    [b]Default Kibana version is 7.6.2[/b][br]&#xD;
+    To change version simply edit the version tag in the repository field to an available version on dockerhub.[br][br]&#xD;
+  </Description>
+  <Overview>
+    Kibana is an open source analytics and visualization platform designed to work with Elasticsearch. You use Kibana to search, view, and interact with data stored in Elasticsearch indices. You can easily perform advanced data analysis and visualize your data in a variety of charts, tables, and maps.
+    [b]Default Kibana version is 7.6.2[/b][br]&#xD;
+    To change version simply edit the version tag in the repository field to an available version on dockerhub.[br][br]&#xD;
+  </Overview>
+  <Registry>https://hub.docker.com/_/elasticsearch</Registry>
+  <Repository>kibana:7.6.2</Repository>
+  <Project>https://www.elastic.co/kibana</Project>
+  <BindTime>true</BindTime>
+  <Privileged>false</Privileged>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>5601</HostPort>
+        <ContainerPort>5601</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Environment>
+    <Variable>
+      <Name>ELASTICSEARCH_HOSTS</Name>
+      <Value></Value>
+    </Variable>
+  </Environment>
+  <Data>
+  </Data>
+  <WebUI>http://[IP]:[PORT:5601]/</WebUI>
+  <Icon>https://raw.githubusercontent.com/ramanagottipati/unraid-docker-templates/master/images/kibana-icon.png</Icon>
+  <DonateText/>
+  <DonateLink/>
+  <ExtraParams></ExtraParams>
+  <CPUset/>
+</Containers>
